@@ -50,12 +50,13 @@ public class IntListExercises {
      *  the first digit of x.
      */
     public static boolean firstDigitEqualsLastDigit(int x) {
-        int lastDigit = x % 10;
-        while (x > 10) {
-            x = x / 10;
+        long y = Math.abs(x);
+        long lastDigit = y % 10;
+        while (y > 10) {
+            y = y / 10;
         }
-        int firstDigit = x % 10;
-        return firstDigit == lastDigit&& firstDigit >0;
+        long firstDigit = y % 10;
+        return firstDigit == lastDigit;
     }
 
     /**

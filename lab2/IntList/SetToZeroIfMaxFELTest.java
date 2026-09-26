@@ -7,9 +7,9 @@ public class SetToZeroIfMaxFELTest {
 
     @Test
     public void testZeroOutFELMaxes1() {
-        IntList L = IntList.of(-1000, -1000, -123);
+        IntList L = IntList.of(-1000, -1000, -121);
         IntListExercises.setToZeroIfMaxFEL(L);
-        assertEquals("-1000 -> -1000 -> -123", L.toString());
+        assertEquals("0 -> 0 -> 0", L.toString());
     }
 
     @Test
