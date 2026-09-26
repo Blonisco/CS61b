@@ -14,6 +14,7 @@ public class IntListExercises {
             head.first += c;
             head = head.rest;
         }
+        head.first += c;
     }
 
     /**
@@ -55,7 +56,7 @@ public class IntListExercises {
             x = x / 10;
         }
         int firstDigit = x % 10;
-        return firstDigit == lastDigit;
+        return firstDigit == lastDigit&& firstDigit !=0;
     }
 
     /**
