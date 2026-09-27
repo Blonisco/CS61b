@@ -52,7 +52,7 @@ public class IntListExercises {
     public static boolean firstDigitEqualsLastDigit(int x) {
         long y = Math.abs(x);
         long lastDigit = y % 10;
-        while (y > 10) {
+        while (y >= 10) {
             y = y / 10;
         }
         long firstDigit = y % 10;
